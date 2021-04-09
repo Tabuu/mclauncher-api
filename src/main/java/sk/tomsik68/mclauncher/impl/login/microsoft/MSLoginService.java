@@ -28,7 +28,7 @@ public class MSLoginService implements ILoginService {
 
     @Override
     public ISession login(IProfile profile) throws Exception {
-        String msAccessToken = getMicrosoftAccessToken("M.R3_BAY.5aa993a4-99ec-f32e-6649-d4cc9f44c9a6");
+        String msAccessToken = getMicrosoftAccessToken("");
         TokenPair xblToken = getXBLToken(msAccessToken);
         TokenPair xstsToken = getXSTSToken(xblToken);
         String mcAccessToken = getMinecraftAccessToken(xstsToken);
