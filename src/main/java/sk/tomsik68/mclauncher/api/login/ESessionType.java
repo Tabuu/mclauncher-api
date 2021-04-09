@@ -6,5 +6,5 @@ package sk.tomsik68.mclauncher.api.login;
  * @author Tomsik68
  */
 public enum ESessionType {
-    LEGACY, MOJANG;
+    LEGACY, MOJANG, MICROSOFT;
 }
